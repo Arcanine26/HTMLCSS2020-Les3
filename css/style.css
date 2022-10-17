@@ -1,0 +1,205 @@
+body {
+   width: 750px;
+   margin: auto;
+   font-family: 'Myriad Pro', sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/******Шапка******/
+
+header {
+   position: relative;
+   background-color: #2d7053;
+   height: 235px;
+}
+
+header .logo {
+   display: inline-block;
+   width: 140px;
+   height: 140px;
+   border-radius: 50%;
+   background-color: #fff;
+   margin: 47px 0 0 38px;
+}
+
+header h1 {
+   display: inline-block;
+   color: #fff;
+   width: 25%;
+   margin: 0 0 0 55px;
+   font-weight: 400;
+   font-size: 30px;
+}
+
+header input, nav {
+   display: none;
+}
+
+header [for=burger] {
+   position: absolute;
+   top: 78px;
+   right: 45px;
+}
+
+header #burger:checked+label+nav {
+   display: inline-block;
+   position: absolute;
+   top: 20px;
+   right: 160px;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+header nav ul li {
+   list-style-type: none;
+}
+
+header nav a, .button a, footer a {
+   color: #fff;
+   text-decoration: none;
+}
+
+header nav a:hover, .button a:hover {
+   text-decoration: underline;
+   color: yellow;
+}
+
+/******Слайд******/
+
+.slide {
+   position: relative;
+   height: 465px;
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/room.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.slide .button {
+   position: absolute;
+   left: 205px;
+   bottom: 45px;
+   margin: auto;
+}
+
+/******Инфокарта******/
+
+.card {
+   position: relative;
+   padding-bottom: 60px;
+}
+
+.card .photo {
+   text-align: center;
+   padding-top: 72px;
+}
+
+.card img {
+   width: 250px;
+   border-radius: 50%;
+}
+
+.card .description {
+   position: absolute;
+   left: 370px;
+   top: 135px;
+   font-size: 24px;
+}
+
+.card .description h2 {
+   font-size: 36px;
+   font-weight: 500;
+}
+
+.card .photo, .card .description {
+   display: inline-block;
+   width: 49%;
+}
+
+/******Инфо******/
+
+p.info {
+   margin: auto;
+   width: 85%;
+   font-size: 24px;
+}
+
+/******Причины******/
+
+.reason {
+   width: 85%;
+   margin: auto;
+}
+
+.reason h2 {
+   font-size: 36px;
+   font-weight: 500;
+}
+
+.reason ul {
+   padding: 0;
+}
+
+.reason ul li {
+   font-size: 24px;
+   list-style-type: none;
+   padding-bottom: 10px;
+}
+
+.reason .button {
+   margin: 50px auto;
+}
+
+/******Подвал******/
+
+footer {
+   position: relative;
+   height: 150px;
+   background-color: #888888;
+}
+
+footer p {
+   color: #fff;
+   font-size: 18px;
+}
+
+footer .adress {
+   position: absolute;
+   top: 85px;
+   right: 225px;
+}
+
+footer .logo {
+   position: absolute;
+   top: 30px;
+   left: 45px;
+   width: 100px;
+   height: 100px;
+   background-color: #fff;
+   border-radius: 50%;
+}
+
+footer .phone {
+   position: absolute;
+   top: 35px;
+   right: 45px;
+}
+
+footer .mail {
+   position: absolute;
+   top: 80px;
+   right: 45px;
+}
+
+.button {
+   padding-top: 25px;
+   width: 340px;
+   height: 75px;
+   text-align: center;
+   color: #fff;
+   font-size: 22px;
+   text-transform: uppercase;
+   background-color: #cb9223;
+}
